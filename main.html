@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function myFunction() {
+			document.getElementById("demo").innerHTML = "Paragraph changed.";
+		}
+	</script>
+</head>
+
+<body>
+	<h2>Demo Javascript in Head</h2>
+	<p id="demo">A Paragraph</p>
+	<button type="button" onclick="myFunction()">Try it</button>
+
+	<h2>Demo Javascript in Body</h2>
+	<p id="demo1">A Paragraph[1]</p>
+	<button type="button" onclick="myFunction1()">Try it</button>
+
+	<script>
+		function myFunction1() {
+			document.getElementById("demo1").innerHTML = "Paragraph changed.";
+		}
+	</script>
+	<script src="myScript.js"></script>
+	<h2>Demo Javascript Eksternal</h2>
+	<p id="demo2">A Paragraph[2]</p>
+	<button type="button" onclick="myFunction2()">Try it</button>
+	<script src="https://www.w3schools.com/js/myScript.js"></script>
+
+	<!--
+	|--------------------------------------------------------------------------
+	   Bisa juga dengan menggunakan link eksternal
+	|--------------------------------------------------------------------------
+	-->
+
+	<!--
+		 Output Using Write
+		 => Write hanya digunakan untuk pengujian,
+		 karena dapat menghapus code html yang lainnya
+	-->
+	<p></p>
+	<script>
+		document.write(5 + 6);
+	</script>
+	<!--
+	 Output Using Alert
+	 => Berupa kotak pemberitahuan, notif
+	-->
+	<p></p>
+	<button type="button" onclick="myFunction5()">Try it Alert</button>
+	<script>
+		function myFunction5() {
+			alert(1 + 9);
+		}
+	</script>
+
+	<p></p>
+	<button type="button" onclick="myFunction6()">Print this page</button>
+	<script>
+		function myFunction6() {
+			print();
+		}
+	</script>
+</body>
+
+</html>
